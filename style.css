@@ -1,0 +1,121 @@
+body {
+    font-family: Times, 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+.background-image {
+    background-image: url("background_survey.jpg");
+    background-color: #eee;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    width: 100%;
+    margin: 3.5em auto 0 auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px; /* Width for mobile divices. */
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px; /* Width for desktop. */
+    }
+}
+.header {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 0.625rem;
+    padding: 0.5rem 1.25rem;
+    margin: 1.25rem auto 0 auto;
+}
+#title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+#description {
+    font-size: 1.4375rem;
+    text-align: center;
+    margin: 2rem 1.875rem;
+}
+#survey-form {
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,0.8) 0%, rgba(101,9,121,0.8) 50%, rgba(9,9,121,0.8) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 0.5rem 1.25rem;
+    margin: 1.25rem auto 0 auto;
+}
+.form-block,
+button {
+    display: block;
+    width: 100%;
+}
+.form-items {
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 1.4375rem;
+    margin: 1.875rem 1.875rem;
+    line-height: 1.5rem;
+}
+label {
+    margin: 0;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+p {
+    margin: 0;
+    line-height: 2.1875rem;
+}
+#name,
+#email,
+#number,
+#dropdown,
+#submit {
+    height: 2em;
+    border: 0;
+    border-radius: 5px;
+}
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+.input-textarea {
+    width: 100%;
+    height: 7rem;
+    resize: vertical;
+}
+button {
+    font-weight: 800;
+    color: #fff;
+    background: #35F500;
+}
+.attribution {
+    margin: 1.25rem;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+a:link,
+a:visited {
+  color: #1e90ff;
+}
+a:hover {
+  color: #ff1e1e;
+}

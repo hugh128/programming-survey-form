@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body class="background-image container">
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header class="header">
+        <h1 id="title">Formulario de encuesta sobre lenguajes de programación</h1>
+        <p id="description">
+            Gracias por tomarte el tiempo para responder esta encuesta 
+            sobre lenguajes de programación</p>
+    </header>
+    <main class="main">
+        <form id="survey-form">
+            <div class="form-items person-info">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" id="name" class="form-block" name="name" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-items person-info">
+                <label id="email-label" for="email">Correo electrónico</label>
+                <input type="email" id="email" class="form-block" name="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="form-items person-info">
+                <label id="number-label" for="number">Edad (opcional)</label>
+                <input type="number" id="number" class="form-block" name="number" placeholder="Edad" min="10" max="100" step="1">
+            </div>
+            <div class="form-items">
+                <label for="dropdown">¿Qué opción describe mejor tu función actual?</label>
+                <select id="dropdown" class="form-block" name="rol" required>
+                    <option disabled selected value>Seleccionar rol actual</option>
+                    <option value="student">Estudiante</option>
+                    <option value="autodidacta">Autodidacta</option>
+                    <option value="job">Trabajador</option>
+                    <option value="not-to-say">Prefiero no decir</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            <div class="form-items">
+                <p>
+                    ¿Con qué lenguaje de programación escribiste tu primer “Hola, mundo”?
+                </p>
+                
+                <label>
+                    <input id="python" class="input-radio" type="radio" name="flanguages" value="python">Python</label>
+                <label>
+                    <input id="c" class="input-radio" type="radio" name="flanguages" value="c">C</label>
+                <label for="c-sharp">
+                    <input id="c-sharp" class="input-radio" type="radio" name="flanguages" value="c-sharp">C#</label>
+                <label for="c-plusplus">
+                    <input id="c-plusplus" class="input-radio" type="radio" name="flanguages" value="c-plusplus">C++</label>
+                <label for="java">
+                    <input id="java" class="input-radio" type="radio" name="flanguages" value="java">Java</label>
+                <label for="javascript">
+                    <input id="javascript" class="input-radio" type="radio" name="flanguages" value="javascript">Javascript</label>
+                <label for="php">
+                    <input id="php" class="input-radio" type="radio" name="flanguages" value="php">PHP</label>
+                <label for="pascal">
+                    <input id="pascal" class="input-radio" type="radio" name="flanguages" value="pascal">Pascal</label>
+                <label for="lothers">
+                    <input id="lothers" class="input-radio" type="radio" name="flanguages" value="lothers">Otros</label>
+            </div>
+            <div class="form-items">
+                <p>
+                    ¿Cuáles son las áreas de programación en las que estas interesado?
+                    <span class="track">(marca todas las opciones que desees)</span>
+                </p>
+                <label for="frontend">
+                    <input id="frontend" class="input-checkbox" type="checkbox" name="areas-interest" value="frontend">Desarrollo web (Frontend)</label>
+                <label for="backend">
+                    <input id="backend" class="input-checkbox" type="checkbox" name="areas-interest" value="backend">Desarrollo web (Backend)</label>
+                <label for="videogame">
+                    <input id="videogame" class="input-checkbox" type="checkbox" name="areas-interest" value="videogame">Videojuegos</label>
+                <label for="app-mobil">
+                    <input id="app-mobil" class="input-checkbox" type="checkbox" name="areas-interest" value="app-mobile">Desarrollo de aplicaciones para moviles</label>
+                <label for="desktop-app">
+                    <input id="desktop-app" class="input-checkbox" type="checkbox" name="areas-interest" value="desktop-app">Desarrollo de aplicaciones de escritorio</label>
+                <label for="va-reality">
+                    <input id="va-reality" class="input-checkbox" type="checkbox" name="areas-interest" value="va-reality">Realidad virtual y aumentada</label>
+                <label for="info-security">
+                    <input id="info-security" class="input-checkbox" type="checkbox" name="areas-interest" value="info-security">Seguridad informática</label>
+                <label for="machine-learn">
+                    <input id="machine-learn" class="input-checkbox" type="checkbox" name="areas-interest" value="machine-learn">Machine learning</label>
+                <label for="aothers">
+                    <input id="aothers" class="input-checkbox" type="checkbox" name="areas-interest" value="aothers">Otros</label>
+            </div>
+            <div class="form-items">
+                <p>
+                    ¿Recomendarías aprender a programar a un amigo o familiar?
+                </p>
+                <label for="definitely">
+                    <input id="definitely" class="input-radio" type="radio" name="recommendation" value="definitely">Definitivamente</label>
+                <label for="maybe">
+                    <input id="maybe" class="input-radio" type="radio" name="recommendation" value="maybe">Quizás</label>
+                <label for="not-sure">
+                    <input id="not-sure" class="input-radio" type="radio" name="recommendation" value="not-sure">No estoy seguro</label>
+                <label for="no-way">
+                    <input id="no-way" class="input-radio" type="radio" name="recommendation" value="no-way">De ninguna manera</label>
+            </div>
+            <div class="form-items">
+                <p class="textarea">
+                    ¿Algún comentario o sugerencia? 
+                </p>
+                <textarea id="review" class="input-textarea" name="review" placeholder="Ingresa tu comentario aquí ... "></textarea>
+            </div>
+            <div class="form-items">
+                <button type="submit" id="submit">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="attribution">
+        <a id="img-attri" target="_blank" href="https://www.freepik.es/fotos/tecnologia">Foto de Tecnología creado por pressfoto - www.freepik.es</a>
+    </footer>
+</body>
+</html>
